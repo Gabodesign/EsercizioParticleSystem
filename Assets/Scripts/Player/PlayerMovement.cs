@@ -59,7 +59,6 @@ public class PlayerMovement : MonoBehaviour
     
     public void ApplyMove()
     {
-        Debug.Log("direction: " + direction.x + ", direction2: " + direction.y);
         if (direction == Vector2.zero)
         {
             rb.velocity = new Vector3(0, rb.velocity.y, 0);
@@ -79,7 +78,6 @@ public class PlayerMovement : MonoBehaviour
 
     public void ApplyRotation()
     {
-        Debug.Log(lookInput);
 
         if (lookInput.magnitude < 0.01f) return;
 

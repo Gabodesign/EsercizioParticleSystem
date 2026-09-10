@@ -31,6 +31,8 @@ public class InputManager : MonoBehaviour
 
         controls.Player.RotateCam.performed += ctx => OnLook?.Invoke(ctx.ReadValue<Vector2>());
         controls.Player.RotateCam.canceled += ctx => OnLook?.Invoke(Vector2.zero);
+
+        controls.Player.Torch.performed += ctx => OnTorch?.Invoke();
     }
 
     private void OnDisable()
@@ -43,4 +45,5 @@ public class InputManager : MonoBehaviour
 
     public event System.Action<Vector2> OnMove;
     public event System.Action<Vector2> OnLook;
+    public event System.Action OnTorch;
 }

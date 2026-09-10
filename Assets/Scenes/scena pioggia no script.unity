@@ -913,7 +913,7 @@ Light:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 131001391}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 10
   m_Type: 0
   m_Shape: 0
@@ -37213,6 +37213,7 @@ GameObject:
   - component: {fileID: 730189716}
   - component: {fileID: 730189715}
   - component: {fileID: 730189714}
+  - component: {fileID: 730189718}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -37316,6 +37317,19 @@ MonoBehaviour:
   walkSpeed: 4
   runSpeed: 7
   sensitivity: 30
+--- !u!114 &730189718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 730189712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9d600e5bf9340d4cb4cd066cb986d9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  torch: {fileID: 131001394}
 --- !u!1001 &747623846
 PrefabInstance:
   m_ObjectHideFlags: 0
