@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.ParticleSystemJobs;
 
 public class SnowController : MonoBehaviour
 {
@@ -17,6 +18,11 @@ public class SnowController : MonoBehaviour
         ps = GetComponent<ParticleSystem>();
         mainModule = ps.main;
         emissionModule = ps.emission;
+    }
+
+    private void Start()
+    {
+       mainModule.simulationSpace = ParticleSystemSimulationSpace.World;
     }
 
     void Update()

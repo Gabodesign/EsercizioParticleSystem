@@ -956,8 +956,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86511431b5f13324785dab1663ef9e3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startSpeed: 0
-  startSize: 1
+  startSpeed: 1
+  startSize: 0.5
   emissionRate: 500
   gravityModifier: 4
 --- !u!199 &1991069515
